@@ -1,0 +1,36 @@
+.logo {
+  text-decoration: none;
+  font-family: $logo-font-family;
+  font-size: 24px;
+  color: $accent-color;
+  line-height: 1.174;
+  letter-spacing: 0.03em;
+  font-weight: 700;
+
+  margin-top: 16px;
+  margin-bottom: 16px;
+
+  .nav & {
+    margin-right: 93px;
+  }
+
+  &--dark {
+    color: #000000;
+  }
+
+  &--light {
+    color: $main-background;
+  }
+
+  .footer__contacts & {
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: $bp-desktop) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.192;
+  }
+}

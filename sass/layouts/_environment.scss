@@ -1,0 +1,46 @@
+.environment {
+  display: none;
+  padding-top: 47px;
+  padding-bottom: 94px;
+
+  @media screen and (min-width: $bp-desktop) {
+    display: block;
+  }
+
+  &__list {
+    @extend %list;
+    display: flex;
+  }
+
+  &__item {
+    position: relative;
+    width: calc((100% - (2 * 30px)) / 3);
+
+    & + & {
+      margin-left: 30px;
+    }
+  }
+
+  &__image {
+    display: block;
+  }
+
+  &__box-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+
+  &__text {
+    margin: 27px auto;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.143;
+    font-weight: 600;
+    color: $main-background;
+  }
+}

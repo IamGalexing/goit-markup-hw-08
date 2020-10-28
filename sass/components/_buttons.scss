@@ -1,0 +1,65 @@
+.btn {
+  text-decoration: none;
+  font-family: $main-font-family;
+  padding: 6px 22px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+  color: $main-text-color;
+  background-color: $middle-dark-background;
+  cursor: pointer;
+  transition: all $transition;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: $main-background;
+    background-color: $accent-color;
+    outline: hidden;
+  }
+}
+
+.btn__main {
+  width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: $main-background;
+  background-color: $accent-color;
+}
+
+.btn-mobile {
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  display: block;
+
+  &:hover .btn-mobile__icon,
+  &:active .btn-mobile__icon {
+    fill: $accent-color;
+  }
+
+  & .btn-mobile__icon-close,
+  &.is-open .btn-mobile__icon-menu {
+    display: none;
+  }
+
+  &.is-open .btn-mobile__icon-close,
+  & .btn-mobile__icon-menu {
+    display: block;
+  }
+
+  &__icon {
+    fill: $main-text-color;
+  }
+}

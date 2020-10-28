@@ -1,0 +1,14 @@
+.section-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.172;
+  letter-spacing: 0.03em;
+  margin: 0 0 30px 0;
+
+  @media screen and (min-width: $bp-desktop) {
+    margin: 0 0 50px 0;
+    font-size: 36px;
+    line-height: 1.167;
+  }
+}

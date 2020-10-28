@@ -1,0 +1,88 @@
+.team {
+  padding: 60px 0;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  background-color: $middle-dark-background;
+  line-height: 1.188;
+
+  &__list {
+    @extend %list;
+  }
+
+  &__member {
+    width: 100%;
+    background-color: $main-background;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    & + & {
+      margin-top: 30px;
+    }
+  }
+
+  &__member-photo {
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
+
+  &__member-discription {
+    padding: 30px 32px;
+    text-align: center;
+  }
+
+  &__member-name {
+    margin: 0 0 10px 0;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  &__member-position {
+    margin: 0 0 16px 0;
+    color: $second-text-color;
+  }
+}
+
+@media screen and (min-width: $bp-tablet) {
+  .team {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__member {
+      width: calc((100% - 30px) / 2);
+
+      &:nth-child(even) {
+        margin-left: 30px;
+      }
+
+      &:not(:first-child),
+      &:not(:nth-child(2)) {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $bp-desktop) {
+  .team {
+    padding: 94px 0;
+
+    &__list {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+
+    &__member {
+      width: calc((100% -3 * 30px) / 4);
+      margin-top: 0;
+
+      & + & {
+        margin-left: 30px;
+      }
+    }
+  }
+}
