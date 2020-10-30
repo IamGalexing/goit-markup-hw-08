@@ -51,11 +51,6 @@
 
 @media screen and (min-width: $bp-tablet) {
   .clients {
-    &__list {
-      display: flex;
-      flex-wrap: wrap;
-    }
-
     &__item {
       width: calc((100% - 2 * 30px) / 3);
 
@@ -84,7 +79,6 @@
     padding-bottom: 94px;
 
     &__list {
-      display: flex;
       flex-wrap: nowrap;
     }
 

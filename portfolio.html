@@ -22,10 +22,9 @@
             aria-label="логотип веб-студия"
             >Web<span class="logo--dark">Studio</span></a
           >
-
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="anchor anchor" href="./index.html">Студия</a>
+              <a class="anchor" href="./index.html">Студия</a>
             </li>
             <li class="nav__item">
               <a class="anchor anchor--current" href="./portfolio.html"
@@ -57,6 +56,65 @@
           </li>
         </ul>
       </div>
+
+      <div class="header__box-mobile container">
+        <nav class="nav-mobile">
+          <a
+            href="./index.html"
+            class="logo nav__logo"
+            lang="en"
+            rel="home"
+            aria-label="логотип веб-студия"
+            >Web<span class="logo--dark">Studio</span></a
+          >
+          <button class="btn-mobile" data-menu-button>
+            <svg class="btn-mobile__icon" width="40" height="40">
+              <use
+                class="btn-mobile__icon-menu"
+                href="./images/icons.svg#btn-menu"
+              ></use>
+              <use
+                class="btn-mobile__icon-close"
+                href="./images/icons.svg#btn-close"
+              ></use>
+            </svg>
+          </button>
+
+          <div class="mobile-menu" data-menu>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="anchor" href="./index.html">Студия</a>
+              </li>
+              <li class="nav__item">
+                <a class="anchor anchor--current" href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="anchor" href="">Контакты</a>
+              </li>
+            </ul>
+            <ul class="header__contact-list">
+              <li class="header__contact-item">
+                <a class="anchor" href="mailto:info@devstudio.com">
+                  <svg class="header__contact-icon" width="16" height="12">
+                    <use href="./images/icons.svg#icon-email"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="header__contact-item">
+                <a class="anchor" href="tel:+380961111111">
+                  <svg class="header__contact-icon" width="10" height="16">
+                    <use href="./images/icons.svg#icon-mobile"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -86,12 +144,25 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="#">
                 <div class="portfolio__item-animate">
-                  <img
-                    class="portfolio__image"
-                    src="./images/portfolio/img.jpg"
-                    width="370"
-                    alt="открытый лэптоп"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img.webp    1x,
+                        ./images/portfolio/img@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      class="portfolio__image"
+                      width="370"
+                      alt="открытый лэптоп"
+                      src="./images/portfolio/img.jpg"
+                      srcset="
+                        ./images/portfolio/img.jpg    1x,
+                        ./images/portfolio/img@2x.jpg 2x
+                      "
+                    />
+                  </picture>
                   <div class="portfolio__item-hover">
                     <p class="portfolio__item-hover-text">
                       Технокряк это современная площадка распространения
@@ -110,12 +181,25 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="#">
                 <div class="portfolio__item-animate">
-                  <img
-                    class="portfolio__image"
-                    src="./images/portfolio/img-1.jpg"
-                    width="370"
-                    alt="два баскетболиста в игре"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img1.webp    1x,
+                        ./images/portfolio/img1@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      class="portfolio__image"
+                      src="./images/portfolio/img1.jpg"
+                      width="370"
+                      alt="два баскетболиста в игре"
+                      srcset="
+                        ./images/portfolio/img1.jpg    1x,
+                        ./images/portfolio/img1@2x.jpg 2x
+                      "
+                    />
+                  </picture>
                   <div class="portfolio__item-hover">
                     <p class="portfolio__item-hover-text">
                       Описание будет скоро...
@@ -133,12 +217,25 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="#">
                 <div class="portfolio__item-animate">
-                  <img
-                    class="portfolio__image"
-                    src="./images/portfolio/img-2.jpg"
-                    width="370"
-                    alt="лого компании с рыбой на заднем фоне"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img2.webp    1x,
+                        ./images/portfolio/img2@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      class="portfolio__image"
+                      src="./images/portfolio/img2.jpg"
+                      width="370"
+                      alt="лого компании с рыбой на заднем фоне"
+                      srcset="
+                        ./images/portfolio/img2.jpg    1x,
+                        ./images/portfolio/img2@2x.jpg 2x
+                      "
+                    />
+                  </picture>
                   <div class="portfolio__item-hover">
                     <p class="portfolio__item-hover-text">
                       Описание будет скоро...
@@ -156,12 +253,25 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="#">
                 <div class="portfolio__item-animate">
-                  <img
-                    class="portfolio__image"
-                    src="./images/portfolio/img-3.jpg"
-                    width="370"
-                    alt="масивные наушники"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img3.webp    1x,
+                        ./images/portfolio/img3@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      class="portfolio__image"
+                      src="./images/portfolio/img3.jpg"
+                      width="370"
+                      alt="масивные наушники"
+                      srcset="
+                        ./images/portfolio/img3.jpg    1x,
+                        ./images/portfolio/img3@2x.jpg 2x
+                      "
+                    />
+                  </picture>
                   <div class="portfolio__item-hover">
                     <p class="portfolio__item-hover-text">
                       Описание будет скоро...
@@ -179,12 +289,25 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="#">
                 <div class="portfolio__item-animate">
-                  <img
-                    class="portfolio__image"
-                    src="./images/portfolio/img-4.jpg"
-                    width="370"
-                    alt="две коробки разного размера"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img4.webp    1x,
+                        ./images/portfolio/img4@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      class="portfolio__image"
+                      src="./images/portfolio/img4.jpg"
+                      width="370"
+                      alt="две коробки разного размера"
+                      srcset="
+                        ./images/portfolio/img4.jpg    1x,
+                        ./images/portfolio/img4@2x.jpg 2x
+                      "
+                    />
+                  </picture>
                   <div class="portfolio__item-hover">
                     <p class="portfolio__item-hover-text">
                       Описание будет скоро...
@@ -202,12 +325,25 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="#">
                 <div class="portfolio__item-animate">
-                  <img
-                    class="portfolio__image"
-                    src="./images/portfolio/img-5.jpg"
-                    width="370"
-                    alt="монитор отображает сайт картой планеты Земля"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img5.webp    1x,
+                        ./images/portfolio/img5@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      class="portfolio__image"
+                      src="./images/portfolio/img5.jpg"
+                      width="370"
+                      alt="монитор отображает сайт картой планеты Земля"
+                      srcset="
+                        ./images/portfolio/img5.jpg    1x,
+                        ./images/portfolio/img5@2x.jpg 2x
+                      "
+                    />
+                  </picture>
                   <div class="portfolio__item-hover">
                     <p class="portfolio__item-hover-text">
                       Описание будет скоро...
@@ -225,12 +361,25 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="#">
                 <div class="portfolio__item-animate">
-                  <img
-                    class="portfolio__image"
-                    src="./images/portfolio/img-6.jpg"
-                    width="370"
-                    alt="развернутая книга"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img6.webp    1x,
+                        ./images/portfolio/img6@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      class="portfolio__image"
+                      src="./images/portfolio/img6.jpg"
+                      width="370"
+                      alt="развернутая книга"
+                      srcset="
+                        ./images/portfolio/img6.jpg    1x,
+                        ./images/portfolio/img6@2x.jpg 2x
+                      "
+                    />
+                  </picture>
                   <div class="portfolio__item-hover">
                     <p class="portfolio__item-hover-text">
                       Описание будет скоро...
@@ -248,12 +397,25 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="#">
                 <div class="portfolio__item-animate">
-                  <img
-                    class="portfolio__image"
-                    src="./images/portfolio/img-7.jpg"
-                    width="370"
-                    alt="этикетка с эмблемой компании весит на шнурке"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img7.webp    1x,
+                        ./images/portfolio/img7@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      class="portfolio__image"
+                      src="./images/portfolio/img7.jpg"
+                      width="370"
+                      alt="этикетка с эмблемой компании весит на шнурке"
+                      srcset="
+                        ./images/portfolio/img7.jpg    1x,
+                        ./images/portfolio/img7@2x.jpg 2x
+                      "
+                    />
+                  </picture>
                   <div class="portfolio__item-hover">
                     <p class="portfolio__item-hover-text">
                       Описание будет скоро...
@@ -271,12 +433,25 @@
             <li class="portfolio__item">
               <a class="portfolio__link" href="#">
                 <div class="portfolio__item-animate">
-                  <img
-                    class="portfolio__image"
-                    src="./images/portfolio/img-8.jpg"
-                    width="370"
-                    alt="открытый лэптоп за которым работают"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/img8.webp    1x,
+                        ./images/portfolio/img8@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <img
+                      class="portfolio__image"
+                      src="./images/portfolio/img8.jpg"
+                      width="370"
+                      alt="открытый лэптоп за которым работают"
+                      srcset="
+                        ./images/portfolio/img8.jpg    1x,
+                        ./images/portfolio/img8@2x.jpg 2x
+                      "
+                    />
+                  </picture>
                   <div class="portfolio__item-hover">
                     <p class="portfolio__item-hover-text">
                       Описание будет скоро...
@@ -368,5 +543,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/portfolio.js"></script>
   </body>
 </html>

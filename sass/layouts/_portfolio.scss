@@ -13,13 +13,12 @@
     margin-bottom: 40px;
   }
 
-  &__list-buttons-item:not(:nth-child(n + 3)) {
+  &__list-buttons-item:not(:nth-child(n + 4)) {
     margin-bottom: 15px;
   }
 
-  &__list-buttons-item:not(:nth-child(1)),
-  &__list-buttons-item:not(:nth-child(4)) {
-    margin-left: 8px;
+  &__list-buttons-item {
+    margin-right: 8px;
   }
 
   &__list {
@@ -110,7 +109,6 @@
 @media screen and (min-width: $bp-tablet) {
   .portfolio {
     &__list-buttons {
-      display: flex;
       justify-content: center;
       flex-wrap: nowrap;
       margin-bottom: 30px;
@@ -120,7 +118,7 @@
       margin-left: 8px;
     }
 
-    &__list-buttons-item:not(:nth-child(n + 3)) {
+    &__list-buttons-item:not(:nth-child(n + 4)) {
       margin-bottom: 0;
     }
 
@@ -145,10 +143,6 @@
 
     &__list-buttons {
       margin-bottom: 50px;
-    }
-
-    &__list-buttons-item:not(:first-child) {
-      margin-left: 8px;
     }
 
     &__item {

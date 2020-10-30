@@ -1,5 +1,5 @@
 .backdrop {
-  padding: 90px 15px;
+  padding: 93px 15px;
   overflow-y: scroll;
 
   position: fixed;
@@ -18,19 +18,23 @@
 }
 
 .modal {
-  margin: 0 auto;
   position: relative;
   height: 581px;
   width: 450px;
+
   padding: 40px;
+  margin: 0 auto;
+  opacity: 1;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  opacity: 1;
   transition: all $transition;
 
   &__close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: 8px;
     right: 8px;
@@ -39,9 +43,6 @@
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: $main-background;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
     &:hover,
     &:focus {
@@ -57,10 +58,6 @@
 }
 
 @media screen and (min-width: $bp-desktop) {
-  .backdrop {
-    // padding: auto;
-  }
-
   .modal {
     width: 528px;
     position: absolute;
