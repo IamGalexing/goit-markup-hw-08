@@ -314,18 +314,19 @@ body {
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 5;
   font-size: 18px;
   line-height: 1.143;
   letter-spacing: 0.02em;
+  background-color: #ffffff;
 }
 
 .header__box {
   display: none;
-}
-
-.header__box-mobile {
-  position: relative;
 }
 
 .header__box-mobile .nav-mobile {
@@ -405,6 +406,7 @@ body {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg-hero-mob.jpg");
   max-width: 1600px;
   margin: 0 auto;
+  margin-top: 60px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -428,6 +430,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .hero {
+    margin-top: 80px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg-hero-tab.jpg");
   }
 }
@@ -933,7 +936,7 @@ body {
 .anchor--current::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   width: 100%;
   height: 4px;

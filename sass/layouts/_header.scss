@@ -1,16 +1,20 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
   z-index: 5;
   font-size: 18px;
   line-height: 1.143;
   letter-spacing: 0.02em;
+  background-color: $main-background;
 
   &__box {
     display: none;
   }
 
   &__box-mobile {
-    position: relative;
-
     .nav-mobile {
       display: flex;
       align-items: center;
