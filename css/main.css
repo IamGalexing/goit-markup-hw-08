@@ -1102,6 +1102,7 @@ body {
 }
 
 .backdrop {
+  z-index: 1000;
   padding: 93px 15px;
   overflow-y: scroll;
   position: fixed;
